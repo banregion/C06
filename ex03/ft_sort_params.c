@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-char puthcar(char c)
+char ft_puthcar(char c)
 {
     write(1,&c,1);
 }
@@ -45,10 +45,10 @@ int main(int argc,char *argv[])
         char *p = argv[i];
         while (*p)
         {
-            putchar(*p);
+            ft_putchar(*p);
             p++;
         }
-        putchar('\n');
+        ft_putchar('\n');
         i++;
         
     }
