@@ -4,7 +4,7 @@ char puthcar(char c)
 {
     write(1,&c,1);
 }
-int strcmp(char *a,char *b)
+int ft_strcmp(char *a,char *b)
 {
     while(*a && *b)
     {
@@ -31,7 +31,7 @@ int main(int argc,char *argv[])
         int j = i + 1;
         while (j < argc)
         {
-            if (strcmp(argv[1], argv[j] > 0))
+            if (ft_strcmp(argv[1], argv[j] > 0))
                 swap(&argv[i],&argv[j]);
             
             j++;
